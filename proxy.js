@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
   proxy.web(req, res, { target: 'https://localhost:8443' });
 });
 
-// Listen on port 8080
-server.listen(8080, () => {
-  console.log('Proxy server is running on http://localhost:8080');
+// Listen on port 3000
+server.listen(3000, () => {
+  console.log('Proxy server is running on http://localhost:3000');
 });
