@@ -7,7 +7,7 @@ const proxy = httpProxy.createProxyServer({});
 // Create a server that listens on port 8080
 const server = http.createServer((req, res) => {
   // Forward the request to localhost:8443
-  proxy.web(req, res, { target: 'http://localhost:8443' });
+  proxy.web(req, res, { target: 'https://localhost:8443' });
 });
 
 // Listen on port 8080
